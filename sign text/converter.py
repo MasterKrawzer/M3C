@@ -5,7 +5,7 @@ setts = []
 controlVar = "Y"
 defaultPart = ""
 coloredPart = ""
-boldPart = ""
+outlinePart = ""
 eventPart = ""
 way = os.getcwd()
 
@@ -13,42 +13,42 @@ config = open(way + "/config.cfg")
 configText = config.read()
 
 
-def default():
+def default(inputText):
     global defaultPart, configText
     
     defaultSample = configText[configText.find("|default|")+9:configText.find("/default|")-1]
-    defaultSample = defaultSample.replace("variable",inputText)
+    defaultSample = defaultSample.replace("variable", inputText)
     defaultPart = defaultSample    
 
 
-def colored():
+def textColor(color):
     global coloredPart, configText
 
-    if col != 'N':
+    if color != 'N':
         defaultSample = configText[configText.find("|color|")+7:configText.find("/color|")-1]
-        defaultSample = defaultSample.replace("colorvar", col)
+        defaultSample = defaultSample.replace("colorvar", color)
         coloredPart = defaultSample
     
 
-def tupe():
-    global boldPart, configText, bold
+def textOutline(outline):
+    global outlinePart, configText
     
-    if bold != 'N':
-        if bold.find(',') != 1:
-            count = bold.count(',') + 1
-            setts = bold.split(',')
+    if outline != 'N':
+        if outline.find(',') != 1:
+            count = outline.count(',') + 1
+            setts = outline.split(',')
             for i in range(count):
-                defaultSample = configText[configText.find("|bold|")+5:configText.find("/bold|")-1]
+                defaultSample = configText[configText.find("|outline|") + 9:configText.find("/outline|") - 1]
                 defaultSample = defaultSample.replace("value", setts[i])
-                boldPart += defaultSample
+                outlinePart += defaultSample
         else:
-            defaultSample = configText[configText.find("|bold|")+5:configText.find("/bold|")-1]
-            defaultSample = defaultSample.replace("value", bold)
-            boldPart = defaultSample
+            defaultSample = configText[configText.find("|outline|")+5:configText.find("/outline|")-1]
+            defaultSample = defaultSample.replace("value", outline)
+            outlinePart = defaultSample
 
 
-def clickEvent():
-    global eventPart, configText, event
+def clickEvent(event):
+    global eventPart, configText
     
     if event != 'N':
        defaultSample = configText[configText.find("|event|")+6:configText.find("/event|")-1]
@@ -56,27 +56,12 @@ def clickEvent():
        eventPart = defaultSample
 
 
-def check():
-    global controlVar
-    if controlVar == "Y":
-        return True
-    if controlVar == "N":
-        return False
-
-    
-while check() == True:
-    inputText = input("Enter the text to transmorm it for commands: ")
-    col = input("Color? ('N' to skip) ")
-    bold = input("Bold/italic/underlined/strikethrough/obstructed? ('N' to skip) ")
-    event = input("Command on click (for signs)? ")
-    default()
-    colored()
-    tupe()
-    clickEvent()
-    print("\nThere you go: " + defaultPart + coloredPart + boldPart + eventPart + '}"')
-    controlVar = input("Wanna continue? (Y/N) ")
-else:
-    quit
+def textmaker(inputText, color, outline, event):
+    default(inputText)
+    textColor(color)
+    textOutline(outline)
+    clickEvent(event)
+    return "There you go: " + defaultPart + coloredPart + outlinePart + eventPart + '}"'
 
 
 
