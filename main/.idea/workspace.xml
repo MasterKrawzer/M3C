@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5dc7d9b-2432-45fa-a3f9-654a61adbbac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../sign text/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign text/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign text/.idea/sign text.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign text/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign text/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign text/DONT TOUCH.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign text/config.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign text/converter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign text/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign text/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/text_gui.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,22 +60,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2115" />
+          <entry key="py" value="2567" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2115" />
+          <entry key="Python" value="2567" />
         </counts>
       </usages-collector>
     </session>
@@ -91,6 +83,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text_gui.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+                <marker date="1535311117866" expanded="true" signature="521:522" ph="..." />
+                <marker date="1535311117866" expanded="true" signature="521:526" ph="..." />
+                <marker date="1535311117866" expanded="true" signature="884:959" ph="..." />
+                <marker date="1535311117866" expanded="true" signature="1143:1438" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="18" column="90" lean-forward="true" selection-start-line="18" selection-start-column="90" selection-end-line="18" selection-end-column="90" />
+              <folding>
+                <marker date="1535291036304" expanded="true" signature="465:470" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_gui.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -105,37 +125,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text_gui.py">
+        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-                <marker date="1535308650723" expanded="true" signature="522:523" ph="..." />
-                <marker date="1535308650723" expanded="true" signature="522:527" ph="..." />
-                <marker date="1535308650723" expanded="true" signature="849:996" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk/Tkinter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/text.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-109">
-              <caret line="18" column="90" lean-forward="true" selection-start-line="18" selection-start-column="90" selection-end-line="18" selection-end-column="90" />
-              <folding>
-                <marker date="1535291036304" expanded="true" signature="465:470" ph="..." />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="910" column="8" selection-start-line="910" selection-start-column="8" selection-end-line="910" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -369,15 +362,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="3100" column="14" selection-start-line="3100" selection-start-column="8" selection-end-line="3100" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="910" column="8" selection-start-line="910" selection-start-column="8" selection-end-line="910" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/-1247972723/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1407">
+          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/text_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        <state relative-caret-position="376">
+          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1535308650723" expanded="true" signature="522:523" ph="..." />
-            <marker date="1535308650723" expanded="true" signature="522:527" ph="..." />
-            <marker date="1535308650723" expanded="true" signature="849:996" ph="..." />
+            <marker date="1535311117866" expanded="true" signature="521:522" ph="..." />
+            <marker date="1535311117866" expanded="true" signature="521:526" ph="..." />
+            <marker date="1535311117866" expanded="true" signature="884:959" ph="..." />
+            <marker date="1535311117866" expanded="true" signature="1143:1438" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="18" column="90" lean-forward="true" selection-start-line="18" selection-start-column="90" selection-end-line="18" selection-end-column="90" />
+          <folding>
+            <marker date="1535291036304" expanded="true" signature="465:470" ph="..." />
           </folding>
         </state>
       </provider>
@@ -390,23 +415,6 @@
             <element signature="e#0#23#0" expanded="true" />
             <marker date="1535307844345" expanded="true" signature="133:153" ph="..." />
             <marker date="1535307844345" expanded="true" signature="150:152" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk/Tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="18" column="90" lean-forward="true" selection-start-line="18" selection-start-column="90" selection-end-line="18" selection-end-column="90" />
-          <folding>
-            <marker date="1535291036304" expanded="true" signature="465:470" ph="..." />
           </folding>
         </state>
       </provider>
