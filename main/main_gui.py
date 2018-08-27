@@ -6,11 +6,11 @@ root.title("M3C")
 
 
 ########################################
-def totext():
+def to_text():
     text.start()
 
 
 ########################################
-Button(root, text="Text compiler", command=totext).pack()
+Button(root, text="Text compiler", command=to_text).pack()
 ########################################
 root.mainloop()

@@ -13,51 +13,50 @@ config = open(way + "/config.cfg")
 configText = config.read()
 
 
-def default(inputText):
+def default(input_text):
     global defaultPart, configText
 
-    defaultSample = configText[configText.find("|default|")+9:configText.find("/default|")]
-    defaultSample = defaultSample.replace("variable", inputText)
-    defaultPart = defaultSample    
+    default_sample = configText[configText.find("|default|")+9:configText.find("/default|")]
+    default_sample = default_sample.replace("variable", input_text)
+    defaultPart = default_sample
 
 
-def textColor(color):
+def text_color(color):
     global coloredPart, configText
 
     if color != 'nothing':
-        defaultSample = configText[configText.find("|color|")+7:configText.find("/color|")]
-        defaultSample = defaultSample.replace("colorvar", color)
-        coloredPart = defaultSample
+        default_sample = configText[configText.find("|color|")+7:configText.find("/color|")]
+        default_sample = default_sample.replace("colorvar", color)
+        coloredPart = default_sample
     else:
         pass
 
-def textOutline(outline):
+
+def text_outline(outline):
     global outlinePart, configText
 
     if outline != 'nothing':
-        defaultSample = configText[configText.find("|outline|")+9:configText.find("/outline|")-1]
-        defaultSample = defaultSample.replace("value", outline)
-        outlinePart = defaultSample
+        default_sample = configText[configText.find("|outline|")+9:configText.find("/outline|")-1]
+        default_sample = default_sample.replace("value", outline)
+        outlinePart = default_sample
     else:
         pass
 
-def clickEvent(event):
+
+def click_event(event):
     global eventPart, configText
+
     if event != '':
-       defaultSample = configText[configText.find("|event|")+7:configText.find("/event|")-1]
-       defaultSample = defaultSample.replace("yourcommand", event)
-       eventPart = defaultSample
+        default_sample = configText[configText.find("|event|")+7:configText.find("/event|")-1]
+        default_sample = default_sample.replace("yourcommand", event)
+        eventPart = default_sample
     else:
         pass
 
 
-def textmaker(inputText, color, outline, event):
-    default(inputText)
-    textColor(color)
-    textOutline(outline)
-    clickEvent(event)
+def text_maker(input_text, color, outline, event):
+    default(input_text)
+    text_color(color)
+    text_outline(outline)
+    click_event(event)
     return defaultPart + coloredPart + outlinePart + eventPart + '}"'
-
-
-
-
