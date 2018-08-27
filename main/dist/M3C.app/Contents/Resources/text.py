@@ -13,11 +13,11 @@ config = open(way + "/config.cfg")
 configText = config.read()
 
 
-def default(input_text):
+def default(inputText):
     global defaultPart, configText
 
     default_sample = configText[configText.find("|default|")+9:configText.find("/default|")]
-    default_sample = default_sample.replace("variable", input_text)
+    default_sample = default_sample.replace("variable", inputText)
     defaultPart = default_sample
 
 
@@ -45,7 +45,6 @@ def text_outline(outline):
 
 def click_event(event):
     global eventPart, configText
-
     if event != '':
         default_sample = configText[configText.find("|event|")+7:configText.find("/event|")-1]
         default_sample = default_sample.replace("yourcommand", event)
@@ -54,9 +53,13 @@ def click_event(event):
         pass
 
 
-def text_maker(input_text, color, outline, event):
-    default(input_text)
+def textmaker(inputText, color, outline, event):
+    default(inputText)
     text_color(color)
     text_outline(outline)
     click_event(event)
     return defaultPart + coloredPart + outlinePart + eventPart + '}"'
+
+
+
+
