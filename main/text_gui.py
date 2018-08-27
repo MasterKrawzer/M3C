@@ -34,15 +34,15 @@ outlines = [
 
 
 def start():
-    text_converter = Tk()
-    text_converter.title("Text Compiler")
+    textconverter = Tk()
+    textconverter.title("Text Compiler")
 
     ########################################
-    txt = StringVar(text_converter)
-    color = StringVar(text_converter)
-    outline = StringVar(text_converter)
-    command = StringVar(text_converter)
-    result = StringVar(text_converter)
+    txt = StringVar(textconverter)
+    color = StringVar(textconverter)
+    outline = StringVar(textconverter)
+    command = StringVar(textconverter)
+    result = StringVar(textconverter)
 
     ########################################
     def timer():
@@ -58,37 +58,37 @@ def start():
 
     ########################################
     def confirm():
-        text_converter.clipboard_clear()
-        text_converter.clipboard_append(main.textmaker(txt.get(), color.get(), outline.get(), command.get()))
-        text_converter.update()
+        textconverter.clipboard_clear()
+        textconverter.clipboard_append(main.textmaker(txt.get(), color.get(), outline.get(), command.get()))
+        textconverter.update()
         result.set("Added to the clipboard!")
         t.start()
 
     ########################################
-    Label(text_converter, text="Text").grid(row=0, sticky=W)
-    text = Entry(text_converter, textvariable=txt, width=50)
+    Label(textconverter, text="Text").grid(row=0, sticky=W)
+    text = Entry(textconverter, textvariable=txt, width=50)
     text.grid(row=0, column=1)
 
     ########################################
-    Label(text_converter, text="Color").grid(row=1, sticky=W)
-    OptionMenu(text_converter, color, *colors).grid(row=1, column=1, sticky=W + E)
+    Label(textconverter, text="Color").grid(row=1, sticky=W)
+    OptionMenu(textconverter, color, *colors).grid(row=1, column=1, sticky=W + E)
     color.set(colors[0])
 
     ########################################
-    Label(text_converter, text="Options").grid(row=2, sticky=W)
-    OptionMenu(text_converter, outline, *outlines).grid(row=2, column=1, sticky=W + E)
+    Label(textconverter, text="Options").grid(row=2, sticky=W)
+    OptionMenu(textconverter, outline, *outlines).grid(row=2, column=1, sticky=W + E)
     outline.set(outlines[0])
 
     ########################################
-    Label(text_converter, text="Command").grid(row=3, sticky=W)
-    command_line = Entry(text_converter, textvariable=command, width=50)
-    command_line.grid(row=3, column=1)
+    Label(textconverter, text="Command").grid(row=3, sticky=W)
+    commandLine = Entry(textconverter, textvariable=command, width=50)
+    commandLine.grid(row=3, column=1)
 
     ########################################
-    Button(text_converter, text="Confirm", command=confirm).grid(row=4, columnspan=2)
+    Button(textconverter, text="Confirm", command=confirm).grid(row=4, columnspan=2)
 
     ########################################
-    Label(text_converter, textvariable=result, width=23).grid(row=5, columnspan=2)
+    Label(textconverter, textvariable=result, width=23).grid(row=5, columnspan=2)
 
     ########################################
-    text_converter.mainloop()
+    textconverter.mainloop()
