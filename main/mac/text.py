@@ -9,7 +9,7 @@ outlinePart = ""
 eventPart = ""
 way = os.getcwd()
 
-config = open(way + "/config.cfg")
+config = open(way + "/resources/config.cfg")
 configText = config.read()
 
 
