@@ -1,7 +1,6 @@
 import os
 
 setts = []
-
 controlVar = "Y"
 defaultPart = ""
 coloredPart = ""
